@@ -15,31 +15,31 @@ namespace WhatDay
             Console.WriteLine("Введите день от 1 до 365");
             string day = Console.ReadLine();
             int Day = int.Parse(day);
-            if (Day>=0&&Day<= 31)
+            if (Day<= 31)
                 monthName = "Januaru";
-            if (Day <= 59)
+           else if (Day >= 31&&Day <= 59)
                 monthName = "February";
-            if (Day <= 90)
+            else if(Day >= 59 && Day <= 90)
                 monthName = "Marth";
-            if (Day <= 121)
+            else if (Day >= 90 && Day <= 121)
                 monthName = "Aptil";
-            if (Day <= 151)
+            else if (Day >= 121 && Day <= 151)
                 monthName = "May";
-            if (Day <= 182)
+            else if (Day >= 151 && Day <= 182)
                 monthName = "June";
-            if (Day <= 212)
+            else if (Day >= 182 && Day <= 212)
                 monthName = "July";
-            if (Day <= 243)
+            else if (Day >= 212 && Day <= 243)
                 monthName = "August";
-            if (Day <= 273)
+            else if (Day >= 243 && Day <= 273)
                 monthName = "Stptember";
-            if (Day <= 304)
+            else if (Day >= 273 && Day <= 304)
                 monthName = "October";
-            if (Day <= 334)
+            else if (Day >= 304 && Day <= 334)
                 monthName = "November";
-            if (Day <= 365)
+            else if (Day >= 334 && Day <= 365)
                 monthName = "December";
-            else
+            else 
             {
                 monthName = "Такого месяца не существует";
             }
