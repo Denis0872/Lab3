@@ -1,0 +1,7 @@
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\bin\Debug\WhatDay.exe.config
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\bin\Debug\WhatDay.exe
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\bin\Debug\WhatDay.pdb
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\obj\Debug\WhatDay.csprojAssemblyReference.cache
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\obj\Debug\WhatDay.csproj.CoreCompileInputs.cache
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\obj\Debug\WhatDay.exe
+C:\Users\Пользователь\source\repos\WhatDay\WhatDay\obj\Debug\WhatDay.pdb
