@@ -39,6 +39,7 @@ namespace WhatDay
                 monthName = "November";
             else if (Day >= 334 && Day <= 365)
                 monthName = "December";
+
             else 
             {
                 monthName = "Такого месяца не существует";
