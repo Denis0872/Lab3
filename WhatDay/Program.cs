@@ -47,28 +47,38 @@ namespace WhatDay
             #endregion
         
         static void Main(string[] args)
+        {
+            try { 
+                    ArrayList DaysInMonths = new ArrayList() { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
+                    Console.WriteLine("Введите день от 1 до 365");
+                    string day = Console.ReadLine();
+                    int Day = int.Parse(day);
+                    if (Day < 1 || Day > 365)
                     {
-            ArrayList DaysInMonths = new ArrayList() { 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
-            Console.WriteLine("Введите день от 1 до 365");
-            string day = Console.ReadLine();
-            int Day = int.Parse(day);
-            int MonthNam = 0;
-            foreach (int daysInMonth in DaysInMonths)
-            {
-                if (Day <= daysInMonth)
-                {
-                    break;
-                }
-                else
-                {
-                    Day -= daysInMonth;
-                    MonthNam++;
-                }
-            }
-            MonthName temp = (MonthName)MonthNam;
-            string MonthName = temp.ToString();
+                    throw new ArgumentOutOfRangeException("Day out of range");
+                    }
+                    int MonthNam = 0;
+                    foreach (int daysInMonth in DaysInMonths)
+                    {
+                        if (Day <= daysInMonth)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Day -= daysInMonth;
+                            MonthNam++;
+                        }
+                    }
+                    MonthName temp = (MonthName)MonthNam;
+                    string MonthName = temp.ToString();
 
-            Console.WriteLine("{0} {1}", Day, MonthName);
+                    Console.WriteLine("{0} {1}", Day, MonthName);
+                }
+            catch (Exception caught)
+                {
+                    Console.WriteLine(caught);
+                }
 
             Console.ReadKey();
          }
