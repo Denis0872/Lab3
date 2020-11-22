@@ -110,8 +110,8 @@ namespace WhatDay
                     Console.WriteLine(caught);
                 }
 
-            Console.ReadKey();
-         }
+         Console.ReadKey();
+        }
 
     }
 }
